@@ -1,1 +1,1 @@
-web: bot.php
+web: index.php
