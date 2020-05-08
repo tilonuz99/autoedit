@@ -50,7 +50,7 @@ $reply_menu = json_encode([
 if($text1=="/start"){
 bot('sendmessage',[
     'chat_id'=>$chat_id,
-    'text'=>"Ushbu bot juda foydali.
+    'text'=>"Bu bot juda foydali.
 Botni kanalingizga admin qiling.
 Musica yuboring.Yuborgan musicangizga kanalingiz usernamesini qo'yadi va musica ma'lumotlarini tagiga yozib beradi va yana bir funksiya musicangizdan 30 soniya qirqibham beradi.Barchasi avtomatlashtrilgan.",
     'parse_mode'=>'markdown',
@@ -103,7 +103,7 @@ $voice = bot('sendVoice',[
 
 $buton = "⤴️Dostlarga ulashish";
 $cap = "@$chuser kanali uchun maxsus";
-if(stripos($voice,"true")!==false){
+if(stripos($voice,"Bad Request: failed to get HTTP URL content")!==true){
 $aydi=$message_ch_mid+2;
 }else{
 $aydi=$message_ch_mid+1;
