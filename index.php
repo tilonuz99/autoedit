@@ -103,10 +103,10 @@ $voice = bot('sendVoice',[
 
 $buton = "⤴️Dostlarga ulashish";
 $cap = "@$chuser kanali uchun maxsus";
-if($voice){
+if(stripos($voice)!==false){
 $aydi=$message_ch_mid+2;
 }else{
-$aydi=$message_ch_mid+2;
+$aydi=$message_ch_mid+1;
 }
 bot('sendAudio',[
           'chat_id'=>$message_ch_chid,
