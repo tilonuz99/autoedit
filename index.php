@@ -103,10 +103,10 @@ $voice = bot('sendVoice',[
 
 $buton = "⤴️Dostlarga ulashish";
 $cap = "@$chuser kanali uchun maxsus";
-if(stripos($voice,"Bad Request: failed to get HTTP URL content")!==true){
+if(strpos($voice,"Bad Request: failed to get HTTP URL content")!==true){
 $aydi=$message_ch_mid+2;
 }else{
-$aydi=$message_ch_mid+1;
+$aydi=$message_ch_mid+2;
 }
 bot('sendAudio',[
           'chat_id'=>$message_ch_chid,
