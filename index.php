@@ -97,13 +97,13 @@ $ahajmi = $getID3->analyze($doc_id.".ogg");
 $voice = bot('sendVoice',[
           'chat_id'=>$message_ch_chid,
 'voice'=>new CURLFile($doc_id.".ogg"),
-'duration'=>'45',
+'duration'=>'30',
       'caption'=>$fname."-".$typeee."\n👇Musicani to'liq holatda tinglang👇\n\n@".$chuser." kanali uchun maxsus",
           ]);
 
 $buton = "⤴️Dostlarga ulashish";
 $cap = "@$chuser kanali uchun maxsus";
-if(strpos($voice,"Bad Request: failed to get HTTP URL content")!==true){
+if(strpos($voice,"Bad Request: failed to get HTTP URL content")!==false){
 $aydi=$message_ch_mid+2;
 }else{
 $aydi=$message_ch_mid+2;
