@@ -94,7 +94,7 @@ $mp3 = new PHPMP3($doc_id.".mp3");
 $mp3_1 = $mp3->extract(15,45);
 $mp3_1->save($doc_id.'.ogg');
 $ahajmi = $getID3->analyze($doc_id.".ogg");
-bot('sendVoice',[
+$voice = bot('sendVoice',[
           'chat_id'=>$message_ch_chid,
 'voice'=>new CURLFile($doc_id.".ogg"),
 'duration'=>'45',
@@ -103,7 +103,11 @@ bot('sendVoice',[
 
 $buton = "⤴️Dostlarga ulashish";
 $cap = "@$chuser kanali uchun maxsus";
+if($voice){
 $aydi=$message_ch_mid+2;
+}else{
+$aydi=$message_ch_mid+1;
+}
 bot('sendAudio',[
           'chat_id'=>$message_ch_chid,
           'audio'=>new CURLFile($doc_id.".mp3"),
