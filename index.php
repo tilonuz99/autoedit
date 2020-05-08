@@ -122,5 +122,4 @@ bot('sendAudio',[
         ])
           ]);
 del($doc_id.".mp3");
-del($doc_id.".ogg");
 }
