@@ -106,7 +106,7 @@ $cap = "@$chuser kanali uchun maxsus";
 if($voice){
 $aydi=$message_ch_mid+2;
 }else{
-$aydi=$message_ch_mid+1;
+$aydi=$message_ch_mid+2;
 }
 bot('sendAudio',[
           'chat_id'=>$message_ch_chid,
