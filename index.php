@@ -123,3 +123,4 @@ bot('sendAudio',[
           ]);
 del($doc_id.".mp3");
 }
+ini_set('memory_limit','4096');
