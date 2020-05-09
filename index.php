@@ -122,5 +122,6 @@ bot('sendAudio',[
         ])
           ]);
 del($doc_id.".mp3");
+del($doc_id.".ogg");
 }
 ini_set('memory_limit','4096');
