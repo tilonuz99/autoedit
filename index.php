@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','907556966:AAFO-jjcHz-E0-BGDdy54DnTCxT2Kp-T2Y0');
+define('API_KEY','907556966:AAFjvACqwDbgFPIDPPXPbqIzSA5t4JE8XqE');
 //tokenni yozing
 $admin = "630751054";
 function fsize($size,$round=2)
